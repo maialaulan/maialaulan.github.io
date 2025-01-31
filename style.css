@@ -1,0 +1,10 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+.header  {
+    margin: 0;
+    background : black; 
+}
