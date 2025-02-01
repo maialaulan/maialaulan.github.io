@@ -30,7 +30,7 @@ header + * { margin-top: 100px; }
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    gap: 40px; /* Espace entre les blocs */
+    gap: 25px; /* Espace entre les blocs */
     width: 200vw; /* Largeur relative */
     height: 60vw;
     max-width: 1000px; /* Largeur max */
