@@ -71,8 +71,8 @@ header + * { margin-top: 100px; }
         grid-template-columns: 1fr;
     }
     .box {
-        width: 1200px;
-        font-size: 1.3em; /* Ajustez cette valeur selon vos besoins */
+        width: 1000px;
+        font-size: 3em; /* Ajustez cette valeur selon vos besoins */
     }
 }
 
