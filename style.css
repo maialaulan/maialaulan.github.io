@@ -57,21 +57,10 @@ header + * { margin-top: 100px; }
 }
 
 /* Pour les téléphones en mode paysage (orientation: landscape) */
-@media (max-width: 1023px) and (orientation: landscape) {
+@media (max-width: 1023px) {
     .container {
         max-width: 1200px;
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Pour les téléphones en mode portrait (orientation: portrait) */
-@media (max-width: 1023px) and (orientation: portrait) {
-    .container {
-        max-width: 100%;
-        grid-template-columns: 1fr;
-    }
-    .box {
-        width: 90%;
     }
 }
 
