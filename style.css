@@ -73,7 +73,8 @@ header + * { margin-top: 100px; }
 /* Pour les téléphones en mode portrait (orientation: portrait) */
 @media (max-width: 1023px) and (orientation: portrait) {
     html, body {
-        font-size: 4em;
+        box-sizing: content-box;
+        font-size: 1.3em;
     }
     .container {
         max-width: 800px;
