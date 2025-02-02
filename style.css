@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Page principale */
@@ -50,6 +49,7 @@ header + * { margin-top: 100px; }
 /* Pour les écrans d'ordinateur */
 @media (min-width: 1024px) {
     html, body {
+        box-sizing: border-box;
         font-size: 1em;
     }
     .container {
@@ -61,6 +61,7 @@ header + * { margin-top: 100px; }
 /* Pour les téléphones en mode paysage (orientation: landscape) */
 @media (max-width: 1023px) and (orientation: landscape) {
     html, body {
+        box-sizing: border-box;
         font-size: 1em;
     }
     .container {
