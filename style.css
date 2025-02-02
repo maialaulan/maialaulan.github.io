@@ -38,6 +38,15 @@ header + * { margin-top: 100px; }
     padding: 20px;
 }
 
+/* Box */
+.box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 /* Media queries pour les différentes tailles d'écran */
 
 /* Pour les écrans d'ordinateur */
@@ -59,16 +68,9 @@ header + * { margin-top: 100px; }
     .container {
         grid-template-columns: 1fr;
     }
-}
-
-/* Box */
-.box {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
+    .box {
+        width: 100%;
+    }
 }
 
 
