@@ -33,7 +33,6 @@ header + * { margin-top: 100px; }
     display: grid;
     gap: 25px;
     width: 100%;
-    max-width: 1200px;
     height: min-content;
     padding: 20px;
 }
@@ -52,6 +51,7 @@ header + * { margin-top: 100px; }
 /* Pour les écrans d'ordinateur */
 @media (min-width: 1024px) {
     .container {
+        max-width: 1200px;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 }
@@ -59,6 +59,7 @@ header + * { margin-top: 100px; }
 /* Pour les téléphones en mode paysage (orientation: landscape) */
 @media (max-width: 1023px) and (orientation: landscape) {
     .container {
+        max-width: 1200px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -66,6 +67,7 @@ header + * { margin-top: 100px; }
 /* Pour les téléphones en mode portrait (orientation: portrait) */
 @media (max-width: 1023px) and (orientation: portrait) {
     .container {
+        max-width: auto;
         grid-template-columns: 1fr;
     }
     .box {
