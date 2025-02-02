@@ -67,11 +67,12 @@ header + * { margin-top: 100px; }
 /* Pour les téléphones en mode portrait (orientation: portrait) */
 @media (max-width: 1023px) and (orientation: portrait) {
     .container {
-        max-width: auto;
+        width: max-content;
         grid-template-columns: 1fr;
     }
     .box {
         width: 100%;
+        font-size: 1.3em; /* Ajustez cette valeur selon vos besoins */
     }
 }
 
