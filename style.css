@@ -31,12 +31,34 @@ header + * { margin-top: 100px; }
 /* Container */
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
     width: 100%;
     max-width: 1200px;
     height: min-content;
     padding: 20px;
+}
+
+/* Media queries pour les différentes tailles d'écran */
+
+/* Pour les écrans d'ordinateur */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* Pour les téléphones en mode paysage (orientation: landscape) */
+@media (max-width: 1023px) and (orientation: landscape) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Pour les téléphones en mode portrait (orientation: portrait) */
+@media (max-width: 1023px) and (orientation: portrait) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Box */
